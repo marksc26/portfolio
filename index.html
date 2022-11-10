@@ -16,7 +16,7 @@
     <header class="header">
         <nav class="navbar">
             <a class="navbar__logo" href="#"><img src="/assets/img/logo.jpg"></a>
-            <div class="navbar__menu show--menu">
+            <div class="navbar__menu">
                 <i class='bx bx-x navbar__icon btn__close'></i>
                 <ul class="navbar__list">
                     <li class="navbar__item"><a class="navbar__link"  href="#home">Inicio</a></li>
@@ -293,11 +293,16 @@
         const btnMenu = document.querySelector('.btn__open')
         const btnClose = document.querySelector('.btn__close')
         const Menu = document.querySelector('.navbar__menu')
+        const btnOption = document.querySelector('.navbar__list')
         
         btnMenu.onclick = function (){
             Menu.classList.add('show--menu')
         }
         btnClose.onclick =  function () {
+            Menu.classList.remove('show--menu')
+        }
+
+        btnOption.onclick = function() {
             Menu.classList.remove('show--menu')
         }
 

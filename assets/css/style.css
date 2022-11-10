@@ -289,6 +289,7 @@ img{
 .home__buttons {
     display: flex;
     justify-content: center;
+    margin-bottom: 80px;
 }
 
 .btnc{
@@ -728,7 +729,7 @@ input{
 .projects__buttons{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .projects__description{
@@ -808,6 +809,10 @@ input{
     .home__container{
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .projects__name{
+        margin-top: 15px;
     }
 
 }
